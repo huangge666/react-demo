@@ -3,11 +3,15 @@ import ReactDom from 'react-dom';
 import './index.css';
 
 class Demo extends Component{
+
+    funcFore(){
+        console.log('我是函数')
+    }
     funcThree = () => {
         console.log('箭头函数调用法')
     }
-    funcDemo(num){
-        console.log("111",num);
+    funcDemo  = (num) =>{
+        console.log("我是参数",num);
     }
     render(){
         return (
